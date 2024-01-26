@@ -1,0 +1,22 @@
+/*element selector*/
+h1{
+    font-size: small;
+    text-align: center;
+    border-style: solid;
+    border-color: maroon;
+    border-radius: 50px;
+}
+/*class selector*/
+.para{
+     background-color: rgb(255, 115, 0);
+     /*import font in css*/
+     font-family: 'Lemon', serif;
+}
+/*id selector*/
+#art{
+    background-color: rgb(23, 100, 1);
+}
+/*group selector*/
+.para,#art{
+    width: 500px;
+}
