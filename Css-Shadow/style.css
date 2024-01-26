@@ -1,0 +1,101 @@
+.h2 .img .p{
+    position: relative;
+}
+.cntr{
+    background-color: beige;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    }
+.box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: blue;
+    width: 330px;
+    height: 330px;
+    border: 1px solid brown;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 15px brown;/*x-offset y-offset radius color*/
+    }
+.box1{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border: 1px solid brown;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 15px 5px brown;/*x-offset y-offset blur radius color*/
+    }
+.box2{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border: 1px solid brown;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 15px 4px 40px brown;/*x-offset y-offset blur-radius spread-raidus color*/
+    }
+.box3{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border: 1px solid brown;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 20px 15px  brown;/* shadow-inword x-offset y-offset color*/
+    }
+.box4{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border: 1px solid brown;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 15px  red, 15px 8px yellow;/*x-offset y-offset  color (multiple shadow in in one box)*/
+    }
+#head1{
+     text-shadow: 5px 5px yellow;
+     display: flex;
+     flex-direction: column;
+     margin: 5px;
+     padding: 5px;
+     /*text-shadow: yellow 5px 7px 2px;
+     text-shadow: green 5px 7px;
+     text-shadow: 5px 7px;*/ /*we can use anyone syntax from them*/
+     }
+#head2{
+     display: flex;
+     flex-direction: column;
+     margin: 5px;
+     padding: 5px;
+     text-shadow: 5px 7px red, 6px 8px yellow, 9px 10px green;/*x-offset y-offset  color (multiple shadow in in one box)*/
+    }
