@@ -1,0 +1,33 @@
+.container{
+    background-color: beige;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    align-content: start;
+}
+.box{
+/*height: 200px;
+width: 200px;*/
+border: 2px solid brown;
+margin: 2px;
+padding: 2px;
+}  
+#box1{
+ background-color: orange;
+ align-self: center; /*for this we need to comment flex-wrap, set justify-content: start; align-content: start;*/
+}
+#box2{
+  background-color: blueviolet;
+  }
+#box3{
+    background-color: maroon;
+    /*flex-grow: 5;*/
+ }
+#box4{
+    background-color: yellowgreen;
+    /*flex-shrink: 4;*/
+}
