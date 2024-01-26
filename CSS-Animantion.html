@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS-Animations</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .cntr{
+            background-color: beige;
+            width: 100vw;
+            height: 100%;
+            margin: 10px;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            height:80px;
+            width: 350px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            animation-name: rightMovement;
+            animation-duration: 5s;/*Duration of animation*/
+            animation-iteration-count: infinite;/*how many time animation perform*/
+            animation-delay: 2s;/*delay in animation*/
+            animation-timing-function: linear;
+            animation-direction: normal;
+        }
+        .box1{
+            height:80px;
+            width: 350px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            animation-name: rightMovement;
+            animation-duration: 5s;/*Duration of animation*/
+            animation-iteration-count: infinite;/*how many time animation perform*/
+            animation-delay: 2s;/*delay in animation*/
+            animation-timing-function: ease;
+            animation-direction: reverse;
+        }
+        .box2{
+            height:80px;
+            width: 350px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            animation-name: rightMovement;
+            animation-duration: 5s;/*Duration of animation*/
+            animation-iteration-count: infinite;/*how many time animation perform*/
+            animation-delay: 2s;/*delay in animation*/
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+        }
+        .box3{
+            height:80px;
+            width: 350px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            animation-name: rightMovement;
+            animation-duration: 5s;/*Duration of animation*/
+            animation-iteration-count: infinite;/*how many time animation perform*/
+            animation-delay: 2s;/*delay in animation*/
+            animation-timing-function: ease-out;
+            animation-direction: alternate-reverse;
+        }
+        .box4{
+            height:80px;
+            width: 350px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            animation-name: rightMovement;
+            animation-duration: 5s;/*Duration of animation*/
+            animation-iteration-count: infinite;/*how many time animation perform*/
+            animation-delay: 2s;/*delay in animation*/
+            animation-timing-function: ease-in-out;
+            animation-direction: initial;
+        }
+        .box5{
+            height:80px;
+            width: 350px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: 3px solid yellow;
+            animation-name: rightMovement;
+            animation-duration: 5s;/*Duration of animation*/
+            animation-iteration-count: infinite;/*how many time animation perform*/
+            animation-delay: 2s;/*delay in animation*/
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+            animation-direction: inherit;
+        }
+          /*Animation Shorthand
+            @keyframes duration | easing-function | delay |
+            iteration-count | direction | fill-mode | play-state | name 
+            animation: 5s linear 2s infinte alternate none running slidein;*/
+        @keyframes rightMovement {
+            from{ /*intial state of element*/
+                top: 0;
+                left: 0;
+            }
+            to{ /*destination state of element*/
+               top: 0;
+               left: 1080px;
+            }
+        }
+        .circle{
+           width: 100px;
+           height: 100px;
+           background-color: blue;
+           border-radius: 50px;
+           margin: 10px;
+           position: relative;
+           display: flex;
+           align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS-Animations(with different timing function)</h1>
+    <div class="cntr">
+        <div class="box"></div></div>
+    <div class="cntr">
+         <div class="box1"></div></div>
+    <div class="cntr">
+         <div class="box2"></div></div>
+    <div class="cntr">
+        <div class="box3"></div></div>
+    <div class="cntr">
+         <div class="box4"></div></div>
+    <div class="cntr">
+         <div class="box5"></div></div>
+         <div class="cntr">
+            <div class="circle"></div></div>
+</body>
+</html>
