@@ -1,0 +1,9 @@
+.img1{
+    float: right;
+    margin-right: 1em;
+    height: 100px;  
+}
+.img2{
+    float: left;
+     margin-left: 1em;
+}
