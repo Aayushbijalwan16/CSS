@@ -1,0 +1,26 @@
+img{
+    margin: 10px;
+    width: 300px; height: 300px;
+    border: solid black;
+}
+.img2 {
+    /*position: relative;
+    top: 100px;
+    left: 100px;*/
+    position: relative;
+}
+.img5{
+    position: fixed;
+}
+.img3{
+    position: sticky;
+    top: 100px;
+}
+.cntr{
+    position: relative;
+    height: 5000px;
+}
+.box{
+    background-color: blueviolet;
+    height: 5000px;
+}
