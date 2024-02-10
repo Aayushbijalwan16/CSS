@@ -1,0 +1,115 @@
+*{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% );
+}
+#nav{
+      width: 100vw;
+      font-size: 2.5rem;
+      background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+      color:antiquewhite;
+      min-height: 80px;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+
+#nav1{
+    flex-direction: row;
+    align-content: center;
+    margin-right: 20px;
+}
+.a{
+    margin: 20px;
+    font-size: 2rem;
+    color:  white;
+    text-decoration: none;
+}
+.rgt{
+    position: relative;
+    /* overflow: hidden; */
+    transition: all 0.3s linear 0s;
+}
+ img{
+    height: 25em;
+    width: 15em;
+    border: 0.3em solid white ;
+    border-radius: 1.5em;
+    transition: all 0.6s 0s linear;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+ .rgt:hover{
+    transform: scale(1.1);
+}
+
+.ftr{
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color:white;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.tbl{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    margin-bottom: 9px;
+    margin-top: 0px;
+}
+.contentbox{
+    box-shadow: 1px 1px 30px black;
+    width: 70%;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    margin: auto;
+    background-color: white;
+}
+.rgt .overlay{
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              background-color: rgba(36, 34, 34, 0.713);
+              border-radius: 20px;
+              align-items: center;
+              justify-content: center;
+              opacity: 0;
+              transition: all 0.3s linear 0s;
+}
+.rgt:hover .overlay {
+    opacity: 1;
+}
+.rgt .overlay span{
+    color:white;
+    font-size: 1.2rem;
+}
+form{
+    flex-direction: column;
+    align-items: baseline;
+    margin: 20px;
+    margin-bottom: 0%;
+}
+#submit{
+    align-self: center;
+}

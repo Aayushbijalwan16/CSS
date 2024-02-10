@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav">
+        <h2>KhaoPiyo</h2>
+            <div id="nav1">
+                <a class="a" href="index.html">Home</a>
+                <a class="a" href="about.html">About</a>
+                <a class="a" href="contact.html">Contact</a>
+            </div>
+    </div>
+    <div>
+        <form action="contact.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+<footer class="ftr"> &copy;KhaoPiyo Pvt Ltd All rights are reserved</footer>
+</body>
+</html>
