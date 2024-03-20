@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.container{
+    padding: 2rem 1rem;
+    max-width: 66vw;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2.8rem;
+}
+.disc{
+    text-align: center;
+    width: 560px;
+    color: rgb(245, 232, 216);
+}
+.card{
+    /* background-color: rgb(238, 231, 231); */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+}
+.card1{
+    background-color: whitesmoke;
+    height: 26em;
+    width: 17em;
+    margin: 1.5em;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 2s;/*Duration of animation*/
+    animation-iteration-count: 1;/*how many time animation perform*/
+    animation-delay: 0ms;/*delay in animation*/
+    animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    animation-direction: normal;
+}
+.card1 .img img{
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+.card1:hover .img  img {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card .card1 .content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+.card1 .logo img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+} 
+.card .card1 .wrtr{
+    display: flex;
+    gap: 1em;
+    margin: 1em;
+}
+.card .card1 .wrtr .logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5em;
+    width: 10rem
+}
+.card .card1 .wrtr .cat {
+    flex-wrap: wrap;
+    height: 2rem;
+    display: flex;
+    align-items: flex-end;
+}
+footer{
+    align-self: center;
+    color: whitesmoke;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+}
+@keyframes rightMovement {
+    from{ /*intial state of element*/
+        top: 0;
+        left: 0;
+    }
+    to{ /*destination state of element*/
+       top: 0;
+       left: 20px;
+    }
+}
+
+    @media (min-width:650px){
+    .card{ 
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1340px){
+    .card{ 
+       grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1080px){
+    .card{
+       grid-template-columns: repeat(4, 1fr);
+    }
+}
+a{
+    color:black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.card1 a:hover{
+    color:#000dff;
+}
+.card1 .wrtr .auth .aunm{
+    color: #000dff;
+}
